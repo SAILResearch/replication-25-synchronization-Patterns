@@ -20,3 +20,30 @@ The consequences of these synchronization gaps are tangible. We found that chang
 As PTLM families mature, their synchronization often worsens, shifting from minimal-but-aligned patterns to the fragmented Disperse Synchronization, increasing the risk that users access outdated or inconsistent model versions. These findings establish a critical need for improved tooling and practices to manage the lifecycle of PTLMs across the upstream-downstream divide, ensuring reproducibility, traceability, and user trust.
 ## Takeaway
 Our findings reveal that the synchronization between GitHub and Hugging Face is largely ad-hoc and inefficient, characterized by significant delays and fragmented update patterns. This disconnect poses a direct threat to the reproducibility and reliability of the AI supply chain, as users can easily access models on Hugging Face that are stale or inconsistent with their upstream source code. To build trust and ensure model integrity, the community must develop and adopt better tooling—such as automated CI/CD pipelines and provenance tracking—that explicitly links model artifacts on Hugging Face to the specific code commits on GitHub that produced them.
+## Folder Structure
+- **Code**: This folder contains all scripts used in the pre-experiment phase, including those for GitHub commit extraction, link extraction from model cards, Hugging Face author and commit extraction, and pattern visualization.
+- **RQs**: This folder contains the code for analyzing the three research questions.
+- **Dataset**: This folder contains the datasets used for this experiment, including the subsets used for manual analysis.
+- **Synchronization Pattern Examples**: This folder contains scatter plot visualizations that depict an example of each identified synchronization pattern, from frequent to rare.
+- **Results**: This folder contains all results from our experiment, including the final framework and supporting examples.
+- **Other_Files**: This folder contains other relevant and useful files.
+## Requirements
+Python Programming Language
+Python Libraries
+- pandas
+- github
+- request
+- beautiful soup
+- huggingface_hub
+- NLTK
+- gemini API
+- sklearn
+- matplotlib
+- scipy
+- numpy
+DrawIO
+## Authors
+Ajibode Adekunle
+Abdul Ali Bangash
+Bram Adams
+Ahmed E. Hassan
