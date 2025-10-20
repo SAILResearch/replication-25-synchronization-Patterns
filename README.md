@@ -29,6 +29,7 @@ Our findings reveal that the synchronization between GitHub and Hugging Face is 
 - **Other_Files**: This folder contains other relevant and useful files.
 ## Requirements
 Python Programming Language
+
 Python Libraries
 - pandas
 - github
@@ -43,7 +44,7 @@ Python Libraries
 - numpy
 DrawIO
 ## Authors
-Ajibode Adekunle
-Abdul Ali Bangash
-Bram Adams
-Ahmed E. Hassan
+- Ajibode Adekunle
+- Abdul Ali Bangash
+- Bram Adams
+- Ahmed E. Hassan
