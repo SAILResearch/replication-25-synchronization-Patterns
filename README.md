@@ -4,6 +4,7 @@ This separation creates a complex supply chain where the code on GitHub and the 
 - **Consistency**: Is the model I'm downloading from HF built from the latest code in the GH repository?
 - **Provenance**: Can I trace a HF model version back to the exact training script and configuration that produced it?
 - **Timeliness**: When a bug is fixed in the GH training code, how long until a corrected model is available on HF?
+
 Currently, no established practices or tools ensure that these two platforms remain synchronized. This lack of coordination can lead to version drift, where the model on Hugging Face becomes stale, misaligned, or irreproducible from its supposed source code on GitHub, undermining trust and reliability in the ecosystem.
 To address this gap, we conducted a large-scale empirical study to understand the current state of synchronization between GitHub and Hugging Face. We employed a mixed-methods approach (quantitative and qualitative analysis) to investigate the commit activities across 325 PTLM families, consisting of 904 HF models and their corresponding GH repositories. Our key observations are discussed below.
 ## Divergent Roles Revealed by Commit Activities
